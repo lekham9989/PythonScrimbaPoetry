@@ -1,4 +1,4 @@
-#RETURN STATEMENT:
+# RETURN STATEMENT:
 
 # If we have multiple values in return statement, returns tuple by default and can return a list and set by specification
 def value_added_tax(amount):
