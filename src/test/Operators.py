@@ -20,8 +20,8 @@ print('o' not in 'John')            # Is letter 'o' not in John?
 
 a =[23,15,8]
 b = a
-print(a == b) # a is equal to b
-print(a is b) # are a and b occupying the same memory space? | Are a and b are identical objects?
+print(a == b)                               # a is equal to b
+print(a is b)                               # are a and b occupying the same memory space? | Are a and b are identical objects?
 print(id(a) == id(b))
 print(id(a),id(b))
 
@@ -30,5 +30,31 @@ a =[23,15,8]
 b =[23,15,8]                                # allocating a LIST IDENTICAL to b
 print(a == b)                               # Then, a is equal to b? (true)
 print(a is b)                               # But a and b are not occupying the same memory space | Is a identical to b? (False)
-print(id(a) == id(b))                      # False as id(a) is 2, id(b) is 3
-print(id(a),id(b))                         # 2,3
+print(id(a) == id(b))                       # False as id(a) is 2, id(b) is 3
+print(id(a),id(b))                          # 2,3
+
+
+# Examples
+a=7
+b=3
+print('a == b is', a == b)
+print('a != b is', a != b)
+print('a > b is', a > b)
+print('a < b is', a < b)
+print('a >= b is', a >= b)
+print('a <= b is', a <= b)
+print('o in John is ','o' in 'John')                        # membership
+print('o in John is ','o' not in 'John')                    # non membership
+print('John is John ','John' is 'John')                     # identity
+print('John is not John is ','John' is not 'John')          # negative identity
+
+# Console:
+# ›a == b is False
+# ›a != b is True
+# ›a > b is True
+# ›a < b is False
+# ›a <= b is False
+# ›o in John is True
+# ›o in John is False
+# ›John is John True
+# ›John is not John is False
